@@ -84,7 +84,7 @@ bcrypt==4.0.1
 Host: 69.62.82.234
 Database Name: wha_chatbot
 Username: remote_user
-Password: @Codevocado#remote%1
+Password: [REDACTED]
 Port: 3306
 ```
 
@@ -215,7 +215,7 @@ python init_db.py
 **Usage:** `python init_db.py`  
 **Creates:** Database tables and 4 default users  
 **Default Users:**
-- admin / admin123
+- admin / ********
 - rohith / rohith123
 - reception / reception123
 - doctor / doctor123
@@ -392,7 +392,7 @@ python test_dual_login_methods.py
 ```bash
 python -c "
 import pymysql
-conn = pymysql.connect(host='69.62.82.234', user='remote_user', password='@Codevocado#remote%1', database='wha_chatbot')
+conn = pymysql.connect(host=os.environ.get('DB_HOST', 'localhost'), user=os.environ.get('DB_USER', 'root'), password=os.environ.get('DB_PASSWORD', 'your_password_here'), database=os.environ.get('DB_NAME', 'hospital_db'))
 cursor = conn.cursor()
 cursor.execute('SELECT COUNT(*) FROM users;')
 print(f'Total users: {cursor.fetchone()[0]}')
@@ -407,7 +407,7 @@ conn.close()
 # Login Test
 curl -X POST http://localhost:5000/login \
   -H "Content-Type: application/json" \
-  -d '{"username":"admin","password":"admin123"}'
+  -d '{"username":"admin","password":"********"}'
 
 # Expected Response:
 # {"access_token":"eyJ0eX...","user":{"id":1,"username":"admin","role":"admin"}}
@@ -533,7 +533,7 @@ http://localhost:5000
 ```json
 {
   "username": "admin",
-  "password": "admin123"
+  "password": "********"
 }
 ```
 **Response (Success):**
@@ -581,7 +581,7 @@ http://localhost:5000
 ```json
 {
   "username": "newuser",
-  "password": "password123",
+  "password": "********",
   "full_name": "New User",
   "email": "newuser@hospital.com",
   "role": "reception"

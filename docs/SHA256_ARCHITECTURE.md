@@ -193,7 +193,7 @@ Example:
 │  ✅ Result: Original password CANNOT be recovered               │
 │                                                                 │
 │  Example:                                                       │
-│  Input: "admin123"                                              │
+│  Input: "********"                                              │
 │  Output: "bf1ce033cdf3dc70d7ad1c48b175e39e..."                  │
 └─────────────────────────────────────────────────────────────────┘
               │
@@ -207,7 +207,7 @@ Example:
 │  ✅ Salt stored separately from hash                            │
 │                                                                 │
 │  Example:                                                       │
-│  Password: "password123"                                        │
+│  Password: "********"                                        │
 │  admin salt:   "3381aead22147fc5..."                            │
 │  admin hash:   "bf1ce033cdf3dc70..."                            │
 │  rohith salt:  "8623e469ad9402db..."                            │
@@ -224,7 +224,7 @@ Example:
 │  ✅ No reversible operations                                    │
 │                                                                 │
 │  Login Flow:                                                    │
-│  1. Input password: "admin123"                                  │
+│  1. Input password: "********"                                  │
 │  2. Retrieved salt: "3381aead22147fc5..."                       │
 │  3. Compute hash: PBKDF2(                                       │
 │       password, salt, 1000 iterations                           │
@@ -313,7 +313,7 @@ Total Login Time             ~165ms      User perceives as instant
 Old Password Format (Plain-text):
 {
   "username": {
-    "password": "admin123"
+    "password": "********"
   }
 }
      ↓

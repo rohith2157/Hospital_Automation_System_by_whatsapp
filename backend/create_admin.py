@@ -8,16 +8,16 @@ app = create_app()
 
 with app.app_context():
     # Create admin user with bcrypt hash
-    password = 'admin123'
+    password = '********'
     hashed = bcrypt.generate_password_hash(password).decode('utf-8')
     
     # Insert directly into MySQL
     import pymysql
     connection = pymysql.connect(
-        host='69.62.82.234',
-        user='remote_user',
-        password='@Codevocado#remote%1',
-        database='wha_chatbot'
+        host=os.environ.get('DB_HOST', 'localhost'),
+        user=os.environ.get('DB_USER', 'root'),
+        password=os.environ.get('DB_PASSWORD', 'your_password_here'),
+        database=os.environ.get('DB_NAME', 'hospital_db')
     )
     
     cursor = connection.cursor()
@@ -53,7 +53,7 @@ with app.app_context():
     admin = cursor.fetchone()
     print(f"\n✅ Admin user ready:")
     print(f"   Username: admin")
-    print(f"   Password: admin123")
+    print(f"   Password: ********")
     print(f"   Role: {admin[3]}")
     
     cursor.close()

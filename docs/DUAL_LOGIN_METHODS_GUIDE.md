@@ -11,9 +11,9 @@ Your system now supports **TWO ways to login**:
 
 ### How It Works
 ```
-User Input: admin123
+User Input: ********
        ↓
-Backend Hashes: admin123 + salt = bf1ce033cdf3dc70...
+Backend Hashes: ******** + salt = bf1ce033cdf3dc70...
        ↓
 Compare: Generated Hash == Stored Hash?
        ↓
@@ -24,7 +24,7 @@ Compare: Generated Hash == Stored Hash?
 ```json
 {
   "username": "admin",
-  "password": "admin123"
+  "password": "********"
 }
 ```
 
@@ -59,13 +59,13 @@ Direct Comparison: Input Hash == Stored Hash?
 
 | Username | Real Password | Hash Password | Status |
 |----------|---------------|---------------|--------|
-| admin | admin123 | bf1ce033cdf3... | ✅ Both Work |
-| rohith | password123 | 536a7853fff3... | ✅ Both Work |
-| dheeraj | password123 | 0d0eaa41d3b8... | ✅ Both Work |
-| rahul | password123 | 727fc5d54e6d... | ✅ Both Work |
-| kushal | password123 | 76dd147d2981... | ✅ Both Work |
-| suddhu | password123 | a391f23c05de... | ✅ Both Work |
-| gopal | password123 | ed70da4dadde... | ✅ Both Work |
+| admin | ******** | bf1ce033cdf3... | ✅ Both Work |
+| rohith | ******** | 536a7853fff3... | ✅ Both Work |
+| dheeraj | ******** | 0d0eaa41d3b8... | ✅ Both Work |
+| rahul | ******** | 727fc5d54e6d... | ✅ Both Work |
+| kushal | ******** | 76dd147d2981... | ✅ Both Work |
+| suddhu | ******** | a391f23c05de... | ✅ Both Work |
+| gopal | ******** | ed70da4dadde... | ✅ Both Work |
 | kumar | 123456 | f8aa347e7a9f... | ✅ Both Work |
 | sidhu | sidhu123 | 03fb48ab4dc9... | ✅ Both Work |
 | aswin | 121212 | b10f334002d4... | ✅ Both Work |
@@ -178,7 +178,7 @@ One-way: ✅ Yes (cannot reverse)
 
 ### Example Flow
 ```
-Real Password: "admin123"
+Real Password: "********"
          + Salt: "3381aead22147fc57448d986495bcc24..."
               ↓
     [SHA256 PBKDF2, 1000 iterations]
@@ -202,7 +202,7 @@ Content-Type: application/json
 
 {
   "username": "admin",
-  "password": "admin123"  // or hash for testing
+  "password": "********"  // or hash for testing
 }
 ```
 

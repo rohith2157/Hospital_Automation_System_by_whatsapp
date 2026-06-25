@@ -25,9 +25,9 @@ def test_login():
     
     # Test cases
     test_cases = [
-        ('admin', 'admin123', True),         # Correct password
-        ('rohith', 'password123', True),     # Correct password
-        ('rahul', 'password123', True),      # Correct password
+        ('admin', '********', True),         # Correct password
+        ('rohith', '********', True),     # Correct password
+        ('rahul', '********', True),      # Correct password
         ('admin', 'wrongpassword', False),   # Wrong password
         ('rohith', '123456', False),         # Wrong password
         ('nonexistent', 'password', False),  # Non-existent user

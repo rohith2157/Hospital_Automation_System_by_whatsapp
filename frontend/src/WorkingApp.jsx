@@ -1678,7 +1678,7 @@ function WorkingApp() {
 
         <div className="mt-4 text-center text-sm text-gray-500">
           <p>Default credentials:</p>
-          <p>Username: <strong>admin</strong> | Password: <strong>admin123</strong></p>
+          <p>Username: <strong>admin</strong> | Password: <strong>********</strong></p>
         </div>
       </div>
     </div>

@@ -34,6 +34,6 @@ with app.app_context():
         admin = User.query.filter_by(username='admin').first()
         if admin:
             print("\n=== Testing admin login ===")
-            test_password = 'admin123'
+            test_password = '********'
             is_valid = bcrypt.check_password_hash(admin.password, test_password)
             print(f"Password '{test_password}' is valid: {is_valid}")

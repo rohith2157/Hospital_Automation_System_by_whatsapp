@@ -1,10 +1,11 @@
+import os
 import pymysql
 
 # Database connection - direct from your config
 db = pymysql.connect(
     host="69.62.82.234",
     user="remote_user",
-    password="@Codevocado#remote%1",
+    password=os.environ.get("DB_PASSWORD", "your_password_here"),
     database="wha_chatbot"
 )
 cursor = db.cursor()

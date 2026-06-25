@@ -1,3 +1,4 @@
+import os
 #!/usr/bin/env python
 """Quick DB Migration - Run in terminal from Api folder"""
 import mysql.connector
@@ -6,8 +7,8 @@ import json
 # Database connection details - update if needed
 config = {
     'host': 'localhost',
-    'user': 'root',
-    'password': '',
+    'user': os.environ.get('DB_USER', 'root'),
+    'password': os.environ.get('DB_PASSWORD', ''),
     'database': 'hospital_db'
 }
 

@@ -27,9 +27,9 @@ print(f"Stored Hash: {stored_hash[:50]}...")
 print(f"Stored Salt: {stored_salt[:50]}...")
 
 # Test 1: Real Password
-print("\nTest 1: Login with REAL PASSWORD (admin123)")
+print("\nTest 1: Login with REAL PASSWORD (********)")
 print("-" * 70)
-real_pwd = 'admin123'
+real_pwd = '********'
 result1 = verify_password(real_pwd, stored_hash, stored_salt)
 print(f"Result: {'PASS' if result1 else 'FAIL'}")
 

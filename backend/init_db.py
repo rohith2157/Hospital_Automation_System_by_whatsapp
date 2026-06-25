@@ -14,7 +14,7 @@ with app.app_context():
     # Check if admin already exists
     admin = User.query.filter_by(username='admin').first()
     if not admin:
-        hashed_password = bcrypt.generate_password_hash('admin123').decode('utf-8')
+        hashed_password = bcrypt.generate_password_hash('********').decode('utf-8')
         admin = User(
             username='admin',
             email='admin@hospital.com',
@@ -25,6 +25,6 @@ with app.app_context():
         db.session.add(admin)
         db.session.commit()
         print("✓ Database initialized successfully!")
-        print("✓ Admin user created: username='admin', password='admin123'")
+        print("✓ Admin user created: username='admin', password='********'")
     else:
         print("✓ Database already initialized")

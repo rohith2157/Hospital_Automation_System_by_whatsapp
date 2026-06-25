@@ -23,7 +23,7 @@ print("\n" + "="*70)
 print("LOGIN CREDENTIALS FOR TESTING")
 print("="*70)
 print(f"\nUsername: admin")
-print(f"Password (Method 1 - Real): admin123")
+print(f"Password (Method 1 - Real): ********")
 print(f"\nPassword (Method 2 - Hash): {stored_hash}")
 print(f"\nHash length: {len(stored_hash)} characters")
 print("\n" + "="*70)
@@ -38,7 +38,7 @@ print("="*70)
 # Test 1: Real password
 print("\nTest 1: Login with real password")
 try:
-    response = requests.post(LOGIN_URL, json={"username": "admin", "password": "admin123"})
+    response = requests.post(LOGIN_URL, json={"username": "admin", "password": "********"})
     print(f"Status: {response.status_code}")
     if response.status_code == 200:
         print("Result: SUCCESS - You can login with real password!")

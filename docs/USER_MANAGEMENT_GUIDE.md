@@ -261,7 +261,7 @@ All stats update in real-time as you add/remove users.
   "full_name": "New User",
   "email": "new@hospital.com",
   "role": "staff",
-  "password": "password123",
+  "password": "********",
   "is_active": true
 }
 ```

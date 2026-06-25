@@ -21,7 +21,7 @@ CORS(app)
 # ========================================
 # DATABASE CONFIGURATION (Remote MySQL)
 # ========================================
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://remote_user:%40Codevocado%23remote%251@69.62.82.234/wha_chatbot'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'mysql+pymysql://user:pass@localhost/db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
     'pool_pre_ping': True,

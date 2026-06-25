@@ -34,7 +34,7 @@ class TerminalChatbot:
         try:
             response = requests.post(f"{API_BASE_URL}/auth/login", json={
                 "username": "rohith",
-                "password": "password123"
+                "password": "********"
             })
             if response.status_code == 200:
                 self.token = response.json().get('access_token')

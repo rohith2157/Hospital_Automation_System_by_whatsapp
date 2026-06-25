@@ -22,7 +22,7 @@ All user changes now persist across page refreshes!
 ### Step 1: Login as Admin
 ```
 Username: dheeraj
-Password: password123
+Password: ********
 ```
 
 **You should see:**
@@ -34,7 +34,7 @@ Password: password123
 ### Step 2: Switch to Staff
 ```
 Username: rahul
-Password: password123
+Password: ********
 ```
 
 **You should see:**
@@ -46,7 +46,7 @@ Password: password123
 ### Step 3: Switch to Reception
 ```
 Username: kushal
-Password: password123
+Password: ********
 ```
 
 **You should see:**
@@ -60,7 +60,7 @@ Password: password123
 ## Test 2: Data Persistence (Add User)
 
 ### Step 1: Login and Add User
-1. Login with admin account (dheeraj / password123)
+1. Login with admin account (dheeraj / ********)
 2. Click "Users" in left sidebar
 3. Click "+ Add User" button
 4. Fill form:
@@ -92,7 +92,7 @@ Press F5 to refresh the page
 ## Test 3: Data Persistence (Edit User)
 
 ### Step 1: Edit User Details
-1. Login with admin account (dheeraj / password123)
+1. Login with admin account (dheeraj / ********)
 2. Go to Users page
 3. Click "Edit" on any user (e.g., rahul)
 4. Change their name: `Rahul Kumar Updated`
@@ -110,7 +110,7 @@ Press F5
 ## Test 4: Data Persistence (Password Reset)
 
 ### Step 1: Reset Password
-1. Login with admin (dheeraj / password123)
+1. Login with admin (dheeraj / ********)
 2. Go to Users page
 3. Click "🔒 Reset Password" on any user
 4. Enter new password: `newpass123456`
@@ -136,7 +136,7 @@ Press F5
 ## Test 5: Data Persistence (Delete User)
 
 ### Step 1: Delete User
-1. Login with admin (dheeraj / password123)
+1. Login with admin (dheeraj / ********)
 2. Go to Users page
 3. Click "🗑️ Delete" on any user
 4. Click "OK" on confirmation
@@ -154,7 +154,7 @@ Press F5
 ## Test 6: Data Persistence (Status Toggle)
 
 ### Step 1: Toggle Status
-1. Login with admin (dheeraj / password123)
+1. Login with admin (dheeraj / ********)
 2. Go to Users page
 3. Click "Inactive" toggle on any user
 
@@ -170,7 +170,7 @@ Press F5
 ## Test 7: Module Assignment Persistence
 
 ### Step 1: Assign Modules to User
-1. Login with admin (dheeraj / password123)
+1. Login with admin (dheeraj / ********)
 2. Go to Users page
 3. Click "Edit" on a user (e.g., rahul)
 4. Scroll to "Modules" section
@@ -181,7 +181,7 @@ Press F5
 
 ### Step 2: Login as That User
 1. Logout
-2. Login as that user (e.g., rahul / password123)
+2. Login as that user (e.g., rahul / ********)
 3. Look at left sidebar
 
 **Result:** Only assigned modules show in menu! ✓
@@ -199,7 +199,7 @@ Press F5
 
 ### Admin View
 ```
-Login: dheeraj / password123
+Login: dheeraj / ********
 ```
 See:
 - All stats cards
@@ -209,7 +209,7 @@ See:
 
 ### Staff View
 ```
-Login: rahul / password123
+Login: rahul / ********
 ```
 See:
 - Limited stats
@@ -218,7 +218,7 @@ See:
 
 ### Reception View
 ```
-Login: kushal / password123
+Login: kushal / ********
 ```
 See:
 - Patient-focused stats
@@ -274,14 +274,14 @@ See:
 
 | Username | Password | Role | Modules |
 |----------|----------|------|---------|
-| admin | admin123 | superadmin | All 5 |
-| dheeraj | password123 | admin | All 5 |
-| rohith | password123 | superadmin | All 5 |
-| rahul | password123 | staff | dashboard, appointments |
-| kushal | password123 | reception | dashboard, patients, appointments |
-| suddhu | password123 | staff | dashboard |
-| gopal | password123 | reception | dashboard, patients |
-| kumar | password123 | staff | dashboard, doctors |
+| admin | ******** | superadmin | All 5 |
+| dheeraj | ******** | admin | All 5 |
+| rohith | ******** | superadmin | All 5 |
+| rahul | ******** | staff | dashboard, appointments |
+| kushal | ******** | reception | dashboard, patients, appointments |
+| suddhu | ******** | staff | dashboard |
+| gopal | ******** | reception | dashboard, patients |
+| kumar | ******** | staff | dashboard, doctors |
 
 ---
 

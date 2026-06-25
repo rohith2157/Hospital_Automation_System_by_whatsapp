@@ -26,13 +26,13 @@ def display_login_credentials():
     
     # Known real passwords (from migration)
     password_map = {
-        'admin': 'admin123',
-        'rohith': 'password123',
-        'dheeraj': 'password123',
-        'rahul': 'password123',
-        'kushal': 'password123',
-        'suddhu': 'password123',
-        'gopal': 'password123',
+        'admin': '********',
+        'rohith': '********',
+        'dheeraj': '********',
+        'rahul': '********',
+        'kushal': '********',
+        'suddhu': '********',
+        'gopal': '********',
         'kumar': '123456',
         'sidhu': 'sidhu123',
         'aswin': '121212',
@@ -76,7 +76,7 @@ def show_login_examples():
 ║                                                                                                                        ║
 ║  {                                                                                                                     ║
 ║    "username": "admin",                                                                                               ║
-║    "password": "admin123"                                                                                             ║
+║    "password": "********"                                                                                             ║
 ║  }                                                                                                                     ║
 ║                                                                                                                        ║
 ║  Response: ✅ LOGIN SUCCESS                                                                                            ║
@@ -121,7 +121,7 @@ def show_usage_guide():
 
    METHOD 1 (Real Password - Recommended)
    ├─ Username: admin
-   ├─ Password: admin123
+   ├─ Password: ********
    ├─ Status: ✅ Works
    └─ Use When: Normal user login
 
@@ -135,7 +135,7 @@ def show_usage_guide():
 
    password_hash  → bf1ce033cdf3dc70d7ad1c48b175e39e3a48fb0b4491bae9e72e48c57b1c28c75 ✅ Stored
    password_salt  → 3381aead22147fc57448d986495bcc24a8f8e8c85e5b5d6f7a8b9c0d1e2f3a4b ✅ Stored
-   real password  → admin123                                                            ❌ NOT stored
+   real password  → ********                                                            ❌ NOT stored
 
 🔐 SECURITY NOTES:
 
@@ -150,7 +150,7 @@ def show_usage_guide():
    Method 1 (Real Password):
    $ curl -X POST http://localhost:5000/api/login \\
      -H "Content-Type: application/json" \\
-     -d '{"username":"admin","password":"admin123"}'
+     -d '{"username":"admin","password":"********"}'
 
    Method 2 (Hash Password):
    $ curl -X POST http://localhost:5000/api/login \\
@@ -164,7 +164,7 @@ def show_usage_guide():
    # Method 1: Real Password
    response = requests.post(
        'http://localhost:5000/api/login',
-       json={"username": "admin", "password": "admin123"}
+       json={"username": "admin", "password": "********"}
    )
    
    # Method 2: Hash Password

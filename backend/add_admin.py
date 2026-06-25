@@ -28,7 +28,7 @@ try:
                 print(f"   Email: {admin.email}")
             else:
                 print("Creating admin user with SHA256 hashing...")
-                password = 'admin123'
+                password = '********'
                 password_hash, password_salt = hash_password(password)
                 
                 admin = User(
@@ -44,7 +44,7 @@ try:
                 db.session.commit()
                 print("✅ Admin user created!")
                 print(f"   Username: admin")
-                print(f"   Password: admin123")
+                print(f"   Password: ********")
                 print(f"   Role: superadmin")
                 
         except Exception as e:
@@ -52,7 +52,7 @@ try:
             print("Trying to create admin anyway...")
             
             try:
-                hashed = bcrypt.generate_password_hash('admin123').decode('utf-8')
+                hashed = bcrypt.generate_password_hash('********').decode('utf-8')
                 admin = User(
                     username='admin',
                     password_hash=hashed,

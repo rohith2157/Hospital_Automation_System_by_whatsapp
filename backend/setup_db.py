@@ -24,7 +24,7 @@ try:
         # Check if admin exists
         admin = User.query.filter_by(username='admin').first()
         if not admin:
-            hashed_password = bcrypt.generate_password_hash('admin123').decode('utf-8')
+            hashed_password = bcrypt.generate_password_hash('********').decode('utf-8')
             admin = User(
                 username='admin',
                 email='admin@hospital.com',
@@ -36,7 +36,7 @@ try:
             db.session.commit()
             print("✓ Admin user created!")
             print("  Username: admin")
-            print("  Password: admin123")
+            print("  Password: ********")
         else:
             print("✓ Admin user already exists")
         

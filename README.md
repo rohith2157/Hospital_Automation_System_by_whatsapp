@@ -248,11 +248,11 @@ Use these built-in accounts to test the role-based dashboard:
 
 | Username | Password | Role | What they see |
 | :--- | :--- | :--- | :--- |
-| `admin` | `admin123` | **Superadmin** | All 3 stat cards, all modules |
-| `dheeraj` | `password123` | **Admin** | All 3 stat cards, manage users |
-| `kushal` | `password123` | **Reception** | All 3 stat cards |
-| `rahul` | `password123` | **Staff** | 1 stat card only (Total Appointments) |
-| `kumar` | `password123` | **Staff** | 1 stat card only (Total Appointments) |
+| `admin` | `********` | **Superadmin** | All 3 stat cards, all modules |
+| `dheeraj` | `********` | **Admin** | All 3 stat cards, manage users |
+| `kushal` | `********` | **Reception** | All 3 stat cards |
+| `rahul` | `********` | **Staff** | 1 stat card only (Total Appointments) |
+| `kumar` | `********` | **Staff** | 1 stat card only (Total Appointments) |
 
 ---
 

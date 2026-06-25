@@ -31,8 +31,8 @@ def test_login_with_real_password():
     stored_hash = admin.get('password_hash')
     stored_salt = admin.get('password_salt')
     
-    # Real password is "admin123"
-    real_password = "admin123"
+    # Real password is "********"
+    real_password = "********"
     
     print(f"\nUsername: admin")
     print(f"Password: {real_password}")
@@ -87,13 +87,13 @@ def test_all_users():
     print("="*90)
     
     password_map = {
-        'admin': 'admin123',
-        'rohith': 'password123',
-        'dheeraj': 'password123',
-        'rahul': 'password123',
-        'kushal': 'password123',
-        'suddhu': 'password123',
-        'gopal': 'password123',
+        'admin': '********',
+        'rohith': '********',
+        'dheeraj': '********',
+        'rahul': '********',
+        'kushal': '********',
+        'suddhu': '********',
+        'gopal': '********',
         'kumar': '123456',
         'sidhu': 'sidhu123',
         'aswin': '121212',
@@ -147,11 +147,11 @@ def show_usage_guide():
 │  METHOD 1️⃣: REAL PASSWORD (Normal Way)                                    │
 │  ──────────────────────────────────────────────                           │
 │  Username: admin                                                          │
-│  Password: admin123                                                       │
+│  Password: ********                                                       │
 │  Status: ✅ WORKS                                                         │
 │                                                                            │
 │  HOW IT WORKS:                                                            │
-│  1. You enter real password: "admin123"                                   │
+│  1. You enter real password: "********"                                   │
 │  2. Backend hashes it with salt                                           │
 │  3. Compares with stored hash                                             │
 │  4. If match → Login successful!                                          │

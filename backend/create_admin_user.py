@@ -17,7 +17,7 @@ with app.app_context():
         print("✅ Admin user already exists!")
     else:
         # Create admin user with SHA256 hashing
-        password = 'admin123'
+        password = '********'
         password_hash, password_salt = hash_password(password)
         
         admin = User(
@@ -34,7 +34,7 @@ with app.app_context():
         db.session.commit()
         print("✅ Admin user created successfully with SHA256 hashing!")
         print(f"   Username: admin")
-        print(f"   Password: admin123")
+        print(f"   Password: ********")
         print(f"   Role: superadmin")
         print(f"   Email: admin@hospital.com")
         print(f"\n📝 Database stored:")

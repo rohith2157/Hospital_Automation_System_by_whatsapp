@@ -1,12 +1,13 @@
+import os
 import pymysql
 
 # Connect directly to MySQL to inspect table structure
 try:
     connection = pymysql.connect(
-        host='69.62.82.234',
-        user='remote_user',
-        password='@Codevocado#remote%1',
-        database='wha_chatbot'
+        host=os.environ.get('DB_HOST', 'localhost'),
+        user=os.environ.get('DB_USER', 'root'),
+        password=os.environ.get('DB_PASSWORD', 'your_password_here'),
+        database=os.environ.get('DB_NAME', 'hospital_db')
     )
     
     cursor = connection.cursor()

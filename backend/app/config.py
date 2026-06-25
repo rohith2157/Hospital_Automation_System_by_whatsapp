@@ -7,9 +7,9 @@ class Config:
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(hours=24)
     
     # MySQL Database - HR provided server
-    # Password: @Codevocado#remote%1 (URL-encoded below)
+    # Password: (URL-encoded below)
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
-        'mysql+pymysql://remote_user:%40Codevocado%23remote%251@69.62.82.234/wha_chatbot'
+        os.environ.get('DATABASE_URL', 'mysql+pymysql://user:pass@localhost/db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_ENGINE_OPTIONS = {
         'pool_pre_ping': True,

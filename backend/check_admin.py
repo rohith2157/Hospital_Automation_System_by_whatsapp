@@ -21,12 +21,12 @@ with app.app_context():
         print(f"   Password Hash: {admin.password_hash[:50]}...")
         
         # Test password
-        test_password = "admin123"
+        test_password = "********"
         if bcrypt.check_password_hash(admin.password_hash, test_password):
-            print(f"\n✅ Password 'admin123' is CORRECT!")
+            print(f"\n✅ Password '********' is CORRECT!")
         else:
-            print(f"\n❌ Password 'admin123' is WRONG!")
-            print(f"   The password might be different. Try: 'password123' or 'admin'")
+            print(f"\n❌ Password '********' is WRONG!")
+            print(f"   The password might be different. Try: '********' or 'admin'")
     else:
         print("❌ No admin user found in database!")
         print("\nAll users in database:")

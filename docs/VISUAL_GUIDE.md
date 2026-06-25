@@ -214,8 +214,8 @@ Username:  @johndoe
 Full Name: John Doe
 Email:     john@hospital.com
 Role:      Doctor
-Password:  password123 (min 6 chars)
-Confirm:   password123 (matches)
+Password:  ******** (min 6 chars)
+Confirm:   ******** (matches)
 Status:    ☑ Active
 
 ✅ Form Valid - Submit Button ENABLED

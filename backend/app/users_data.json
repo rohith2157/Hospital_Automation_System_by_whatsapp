@@ -1,0 +1,61 @@
+{
+  "sidhu": {
+    "username": "sidhu",
+    "password": "444444",
+    "full_name": "sidhartha",
+    "role": "reception",
+    "phone": "",
+    "email": "sidhu@email.com",
+    "is_active": true,
+    "modules": [
+      "appointments",
+      "doctors"
+    ],
+    "id": 1
+  },
+  "kumar ": {
+    "username": "kumar ",
+    "password": "123456",
+    "full_name": "kumarkishore",
+    "role": "admin",
+    "phone": "",
+    "email": "kumar@email.com",
+    "is_active": true,
+    "modules": [
+      "appointments",
+      "patients",
+      "doctors",
+      "dashboard",
+      "users"
+    ],
+    "id": 2
+  },
+  "rohith": {
+    "username": "rohith",
+    "password": "444444",
+    "full_name": "rohithm",
+    "role": "reception",
+    "phone": "",
+    "email": "rohith@email.com",
+    "is_active": true,
+    "modules": [
+      "appointments",
+      "doctors"
+    ],
+    "id": 3
+  },
+  "aswin": {
+    "username": "aswin",
+    "password": "121212",
+    "full_name": "aswinkumar",
+    "role": "reception",
+    "phone": "",
+    "email": "aswin@email.com",
+    "is_active": true,
+    "modules": [
+      "appointments",
+      "doctors"
+    ],
+    "id": 4
+  }
+}

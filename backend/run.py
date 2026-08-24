@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 # Load environment variables from .env file in the Api directory
-load_dotenv(os.path.join(basedir, '.env'))
+load_dotenv(os.path.join(basedir, '.env'), override=True)
 
 sys.path.insert(0, basedir)
 

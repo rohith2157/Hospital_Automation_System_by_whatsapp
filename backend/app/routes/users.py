@@ -242,6 +242,7 @@ def sync_users():
         
         # Convert list to dict format (keyed by username)
         users_dict = {}
+        existing_users = load_users_data()
         for user in users_list:
             username = user.get('username')
             if username:
@@ -249,8 +250,9 @@ def sync_users():
                 if 'password' in user and user['password']:
                     password_hash, password_salt = hash_password(user['password'])
                 else:
-                    password_hash = user.get('password_hash', '')
-                    password_salt = user.get('password_salt', '')
+                    existing_user = existing_users.get(username, {})
+                    password_hash = user.get('password_hash') or existing_user.get('password_hash', '')
+                    password_salt = user.get('password_salt') or existing_user.get('password_salt', '')
                 
                 users_dict[username] = {
                     'username': username,

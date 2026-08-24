@@ -57,7 +57,7 @@ def login():
         stored_hash = user_data.get('password_hash') or user_data.get('password')
         stored_salt = user_data.get('password_salt')
         
-        print(f"[DEBUG] Stored hash length: {len(stored_hash)}, first 50 chars: {stored_hash[:50]}")
+        print(f"[DEBUG] Stored hash length: {len(stored_hash) if stored_hash else 0}, first 50 chars: {str(stored_hash)[:50] if stored_hash else 'None'}")
         print(f"[DEBUG] Password == stored_hash: {password == stored_hash}")
         
         # Method 2: Try hash password directly FIRST (TESTING METHOD - No salt needed)

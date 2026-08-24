@@ -1,9 +1,12 @@
 {
   "admin": {
-    "role": "superadmin",
+    "username": "admin",
+    "password_hash": "admin123",
+    "password_salt": "",
     "full_name": "ndee ra nekuu",
+    "role": "superadmin",
     "email": "admin@hospital.com",
-    "id": 99,
+    "phone": null,
     "is_active": true,
     "modules": [
       "dashboard",
@@ -12,15 +15,16 @@
       "doctors",
       "users"
     ],
-    "password_hash": "bf1ce033cdf3dc70d7ad1c48b175e39e3a48fb0bdeb70dde2880c29605ec79da2c08fdc94a644d1ddb99e72d9cd74063cf9b2646a8877f4c8672c1919b7060db",
-    "password_salt": "3381aead22147fc57448d986495bcc24826bd36b1d380e6f8f172a5733dc0f97",
-    "phone": null
+    "id": 99
   },
   "rohith": {
-    "role": "superadmin",
+    "username": "rohith",
+    "password_hash": "",
+    "password_salt": "",
     "full_name": "Rohith Kumar",
+    "role": "superadmin",
     "email": "rohith@hospital.com",
-    "id": 7,
+    "phone": null,
     "is_active": true,
     "modules": [
       "dashboard",
@@ -29,66 +33,76 @@
       "doctors",
       "users"
     ],
-    "password_hash": "536a7853fff352649058bf01f634cde43bb3c1b5be947546234b863fb569042b4d2aaced98b3061cfbee5333c19116a6348e62736cc1a5a38476a813c6dc9213",
-    "password_salt": "8623e469ad9402db7996befce36f51365b9fcb756491e925875190071d960195"
+    "id": 7
   },
   "rahul": {
-    "role": "reception",
+    "username": "rahul",
+    "password_hash": "",
+    "password_salt": "",
     "full_name": "Rahul Kumar",
+    "role": "reception",
     "email": "rahul@hospital.com",
-    "id": 1,
+    "phone": null,
     "is_active": true,
     "modules": [
       "dashboard",
       "appointments"
     ],
-    "password_hash": "727fc5d54e6d630c95416492c033573aa0704d97f7587d478892aaebaa8dc654e63b240a89fc16c1aa435e86f5d547b998f79c703b3e65814706ccc1c3497a6a",
-    "password_salt": "e34495b7ba0407377786cdf9b64ea347decf92ed74c651c1b5fe8e4879c0d38a"
+    "id": 1
   },
   "kushal": {
-    "role": "reception",
+    "username": "kushal",
+    "password_hash": "",
+    "password_salt": "",
     "full_name": "Kushal Sharma",
+    "role": "reception",
     "email": "kushal@hospital.com",
-    "id": 2,
+    "phone": null,
     "is_active": true,
     "modules": [
       "dashboard",
       "appointments"
     ],
-    "password_hash": "76dd147d29817bc020881c24f0f90c930f9dd877c94ee5d99b38f8252bd15be05b93fec93b96e78c05ecf10be811175084b47494174ecaa6bae6fca5ea39a7be",
-    "password_salt": "5b8be3a13391b28fbdc94a3168e21559c5dad8972ae1bb019163fd39cb212292"
+    "id": 2
   },
   "suddhu": {
-    "role": "viewer",
+    "username": "suddhu",
+    "password_hash": "",
+    "password_salt": "",
     "full_name": "Sudhir Patel",
+    "role": "viewer",
     "email": "suddhu@hospital.com",
-    "id": 4,
+    "phone": null,
     "is_active": false,
     "modules": [
       "dashboard"
     ],
-    "password_hash": "a391f23c05def1f0fcda3d6ae8e8dfcfdf2e6623ef9670006807042222c60807c6e7d946ec38a6de07bce6280b9dcc7028a1439e9d3bdc84fd2309dfaed24c55",
-    "password_salt": "1794953f0661399b0511d93f9679d144ceb32fe75176d9a1d43b1beaec32de07"
+    "id": 4
   },
   "gopal": {
-    "role": "reception",
+    "username": "gopal",
+    "password_hash": "",
+    "password_salt": "",
     "full_name": "Gopal Reddy",
+    "role": "reception",
     "email": "gopal@hospital.com",
-    "id": 5,
+    "phone": null,
     "is_active": true,
     "modules": [
       "dashboard",
       "appointments",
       "patients"
     ],
-    "password_hash": "ed70da4daddeeedaf2d8fe926bce4108104bf0e35cdd9f629a60a75a004827a48f5289e521164ac61b6f6903ecfa8b9b851f55694089fbd5a8f5f4bb7af06fa2",
-    "password_salt": "dd476799c02a625c87677a8ea2fee3845ef19d91e8de4760f6dba9e99720e375"
+    "id": 5
   },
   "kumar": {
-    "role": "admin",
+    "username": "kumar",
+    "password_hash": "",
+    "password_salt": "",
     "full_name": "kumarkishore",
+    "role": "admin",
     "email": "kumar@email.com",
-    "id": 6,
+    "phone": null,
     "is_active": true,
     "modules": [
       "dashboard",
@@ -97,41 +111,46 @@
       "doctors",
       "users"
     ],
-    "password_hash": "f8aa347e7a9f2e22c60695b63de63454860f00798115a0493be3e3f520922e525030518a9b1c125a05c625c602302f04c2799f012b59212f91ef6f31084ebd1e",
-    "password_salt": "3442cc1e7e535c69ef67119ac377de432f240539d419ad6b7b8141270f679e76"
+    "id": 6
   },
   "sidhu": {
-    "role": "reception",
+    "username": "sidhu",
+    "password_hash": "",
+    "password_salt": "",
     "full_name": "sidhartha",
+    "role": "reception",
     "email": "sidhu@email.com",
-    "id": 8,
+    "phone": null,
     "is_active": true,
     "modules": [
       "appointments",
       "doctors"
     ],
-    "password_hash": "03fb48ab4dc9c751d7bac7f6919b57508da882c622cc13651fa7cfaf2025897183e61337bddc08f0c0bdd2ce7b2815c812fd3606521bf08ba3d85c6b83a5f650",
-    "password_salt": "b6acfc867c75e768aa36a8b1e7dbb84c77f8e6078e90ee5282de3558451e9133"
+    "id": 8
   },
   "aswin": {
-    "role": "reception",
+    "username": "aswin",
+    "password_hash": "",
+    "password_salt": "",
     "full_name": "aswin",
+    "role": "reception",
     "email": "aswin@emailcom",
-    "id": 100,
+    "phone": null,
     "is_active": true,
     "modules": [
       "appointments",
       "doctors"
     ],
-    "password_hash": "b10f334002d4c3f0fe6a033eb92507ee5ba9b01728a77cbcafa5aa04b3dfd4e92e9a816b1517f44121e376278a1d9885d2ab91caf3290c904c89181feb2f8b51",
-    "password_salt": "d894bb439083abbcce17a17dbb8f632e1ec99588edf38ad67975cdacb1ef8ea2"
+    "id": 100
   },
   "raju": {
     "username": "raju",
+    "password_hash": "",
+    "password_salt": "",
     "full_name": "rajukumar",
     "role": "campaign",
-    "phone": "",
     "email": "raju@email.com",
+    "phone": "",
     "is_active": true,
     "modules": [
       "dashboard",
@@ -139,33 +158,31 @@
       "patients",
       "doctors"
     ],
-    "id": 101,
-    "password_hash": "1c905671a7461eee2a35ba8a7596760f2f399cccdbde4db9586650f0d9e102fa49a76b22813454a0f3b5cd9d40e3d6d4ad9ff5fa196d8c492280e9df409f8f86",
-    "password_salt": "8d4a9416c13ce24730abdd3a5d328e1625ad543c99f5dd87e4dc0541eb74f3c0"
+    "id": 101
   },
   "kishore": {
     "username": "kishore",
+    "password_hash": "",
+    "password_salt": "",
     "full_name": "kishorekumar",
     "role": "reception",
-    "phone": "",
     "email": "kishore@gmail.com",
+    "phone": "",
     "is_active": true,
     "modules": [
       "appointments",
       "doctors"
     ],
-    "id": 102,
-    "password_hash": "4a4a242fc9c8c75b07aa4fa0288f3692d94fe1f9f43916f37340c5758c966a33bbf992036166560325ee0d35a4c74c5a32719df469955bf971a74d8936222a46",
-    "password_salt": "dd61f0780ec4f89218b5d9f5f20412d7c395a0391d657be3f41b45849059aca3"
+    "id": 102
   },
   "uday": {
     "username": "uday",
-    "password_hash": "2f04637685cbd0e7b71a3a18e183a1fbb85f36a36764ab2cea0f9c073130cf589f500691bfd9b2200ada1560fca70899a0eab913ef0a1e715b00723df9108273",
-    "password_salt": "7e9216a577bc6434e42e32e56ca2b4ea237fbd63eef74bfd75d902733cad032d",
+    "password_hash": "",
+    "password_salt": "",
     "full_name": "uday kumar",
     "role": "admin",
-    "phone": "",
     "email": "uday@gmail.com",
+    "phone": "",
     "is_active": true,
     "modules": [
       "appointments",
@@ -175,12 +192,12 @@
   },
   "admin12": {
     "username": "admin12",
-    "password_hash": "486c87f108d9864dd02ab56b4c0d4e6eaf50e1bb6bda1eec4f51098f6349328aa1750cbedf39230a61d379645d096145bfe4bbe38e3df4f97c87f55b0ae68f11",
-    "password_salt": "07ba511d0ed67c6d9357b24b79fedd478cb4db4175733f424fd10c1d53b5d84d",
+    "password_hash": "",
+    "password_salt": "",
     "full_name": "dheerajkumari",
     "role": "admin",
-    "phone": "",
     "email": "dheerajapollo@gmail.com",
+    "phone": "",
     "is_active": true,
     "modules": [
       "dashboard",
@@ -189,5 +206,38 @@
       "doctors"
     ],
     "id": 104
+  },
+  "kushal01": {
+    "username": "kushal01",
+    "password_hash": "admin123",
+    "password_salt": "",
+    "full_name": "kushal manager head",
+    "role": "admin",
+    "email": "kushal@gmail.com",
+    "phone": "",
+    "is_active": true,
+    "modules": [
+      "dashboard",
+      "appointments",
+      "patients",
+      "users",
+      "doctors"
+    ],
+    "id": 105
+  },
+  "goru": {
+    "username": "goru",
+    "password_hash": "b3c28284aa0c72426a7fb9a68e0099d0c92f53ab36d94222570c1bd3fae4b3b04a9c8541a12b3f397e56f994f07db831871510e26eae99cc90823d8cbf493451",
+    "password_salt": "40be9f23dfe782e54fd964a239a034a3fd77156b6f640960bc7747936af906da",
+    "full_name": "goru kumar",
+    "role": "reception",
+    "phone": "",
+    "email": "goru123@gmail.com",
+    "is_active": true,
+    "modules": [
+      "dashboard",
+      "appointments"
+    ],
+    "id": 106
   }
 }
